@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    
+    <div class="main-container">
+        <img src="./images/logo.svg" class="logo">
+        <div class="box">
+            <div class="input-side">
+                <div class="bill-inputs">
+                    <div>
+                        <label for="bill" id="label-bill">Bill</label>
+                    </div>
+                    
+                    <div class="input-container">
+                        <img src="./images/icon-dollar.svg" class="dollar-sign">
+                        <input type="number" id="bill">
+                    </div>
+                </div>
+
+                <div class="tip">
+                    <div class="tip-text">
+                        <p class="label-tip">Select Tip %</p>
+                    </div>
+
+                    <div class="tip-btns">
+                        <button value="0.05" class="tips-percent" id="5">5%</button>
+                        <button value="0.10" class="tips-percent" id="10">10%</button>
+                        <button value="0.15" class="tips-percent" id="15">15%</button>
+                        <button value="0.25" class="tips-percent" id="25">25%</button>
+                        <button value="0.5" class="tips-percent" id="50">50%</button>
+                        <input type="number" class="tips-percent-input" id="custom" placeholder="Custom">
+                    </div>
+                </div>
+
+                <div class="number-of-people">
+                    <div class="label-people-container">
+                        <label for="num-people" id="num-people-label">Number of People</label>
+                    </div>
+
+                    <div class="num-people-input-container">
+                        <img src="./images/icon-person.svg" class="person-icon">
+                        <input type="number" id="num-people">
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-side">
+                <div class="tip-ammount-container">
+                    <div class="text-tip">
+                        <p class="main-text">Tip Ammount</p>
+                        <p class="sub-text">/ person</p>
+                    </div>
+
+                    <div class="tip-value">
+                        <h1>$<span id="tip-ammount"></span></h1>
+                    </div>
+                </div>
+
+                <div class="total-container">
+                    <div class="text-tip">
+                        <p class="main-text">Total</p>
+                        <p class="sub-text">/ person</p>
+                    </div>
+
+                    <div class="tip-value">
+                        <h1>$<span id="total-ammount"></span></h1>
+                    </div>
+                </div>
+
+                <div class="reset-btn-container">
+                    <button class="reset-btn">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
